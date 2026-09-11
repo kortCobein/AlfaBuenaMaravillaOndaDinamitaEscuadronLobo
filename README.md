@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🐺 ALFA BUENA MARAVILLA ONDA DINAMITA ESCUADRÓN LOBO
+<img src="docs/readme-equipo-alfa.svg" alt="Equipo Alfa Buena Maravilla Onda Dinamita Escuadrón Lobo" width="100%" />
 
-### Desarrollo de Aplicaciones Móviles · Flutter
+<br>
 
 <img src="https://img.shields.io/badge/UTSJR-Universidad%20Tecnológica-00245A?style=for-the-badge" alt="UTSJR" />
 <img src="https://img.shields.io/badge/Equipo-Alfa%20Buena%20Mara-009D81?style=for-the-badge" alt="Equipo Alfa" />
@@ -144,6 +144,7 @@ AlfaBuenaMaravillaOndaDinamitaEscuadronLobo/
 │
 ├── README.md
 └── docs/
+    ├── readme-equipo-alfa.svg
     └── user-stories/
         ├── README.md
         ├── US01-...
