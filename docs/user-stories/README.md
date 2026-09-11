@@ -1,4 +1,4 @@
-# Historias de Usuario — Equipo SixSeven
+# Historias de Usuario — Equipo Alfa Buena Maravilla Onda Dinamita Escuadrón Lobo
 
 Documentación en Markdown de las historias de usuario del proyecto. Estas versiones permiten consultar los requisitos directamente desde GitHub sin depender de archivos `.docx`.
 
