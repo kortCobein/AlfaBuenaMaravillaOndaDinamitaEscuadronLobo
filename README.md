@@ -212,6 +212,98 @@ main
 
 ---
 
+## 🚦 Cómo trabajar en este repositorio
+
+El repositorio ya incluye una base común para que todos trabajemos de la misma manera: **Flutter CI**, plantilla de Pull Request, `CODEOWNERS`, configuración compartida de VS Code, guía de contribución y un único punto para la URL del backend en `lib/core/config/api_config.dart`.
+
+> La guía detallada vive en [`CONTRIBUTING.md`](CONTRIBUTING.md). Esta sección es la versión rápida para empezar sin equivocarse de rama.
+
+### 1. Preparación inicial en VS Code
+
+```bash
+git clone https://github.com/kortCobein/AlfaBuenaMaravillaOndaDinamitaEscuadronLobo.git
+cd AlfaBuenaMaravillaOndaDinamitaEscuadronLobo
+code .
+flutter pub get
+```
+
+Todos trabajamos en **VS Code** con las extensiones de **Dart** y **Flutter**.
+
+### 2. Entrar únicamente a tu rama
+
+Ejemplo para US01:
+
+```bash
+git fetch origin
+git switch feature/us01-login-sebas
+git pull origin feature/us01-login-sebas
+git branch --show-current
+```
+
+La última línea sirve para comprobar que **no estás en `main` ni en `develop`** antes de programar.
+
+### 3. Antes de cada entrega
+
+```bash
+dart format .
+flutter analyze
+flutter test
+git status
+```
+
+Si `flutter analyze` o `flutter test` fallan, la historia todavía no está lista para revisión.
+
+### 4. Commit y push
+
+```bash
+git add .
+git commit -m "feat(usXX): descripcion corta del cambio"
+git push -u origin feature/usXX-nombre
+```
+
+Después del primer push de esa rama basta con `git push`.
+
+### 5. Pull Request
+
+Cada historia terminada se envía así:
+
+```text
+feature/usXX-*  ->  develop
+```
+
+Nunca se abre una PR de una `feature/*` directamente hacia `main`. La plantilla de Pull Request pedirá confirmar criterios de aceptación, SOLID, pruebas y que el autor puede explicar su código.
+
+### 6. Empezar la siguiente US de tu épica
+
+Cuando la historia anterior ya esté integrada en `develop`, la siguiente rama debe actualizarse antes de programar:
+
+```bash
+git fetch origin
+git switch develop
+git pull origin develop
+git switch feature/usXX-siguiente
+git merge develop
+```
+
+Así cada historia nueva comienza sobre la integración más reciente y se reducen conflictos.
+
+### 7. Reglas que no se negocian
+
+- No trabajar directamente en `main` o `develop`.
+- No usar `git push --force`.
+- No mezclar varias historias en un mismo PR sin una razón técnica real.
+- No subir contraseñas, tokens o secretos.
+- No consumir APIs externas directamente desde widgets o módulos funcionales.
+- La URL del backend se cambia sólo en `lib/core/config/api_config.dart`.
+- Cada integrante debe poder explicar el código que entrega.
+- La creatividad visual y técnica está permitida siempre que se respeten los criterios de aceptación.
+
+### Configuración administrativa pendiente del propietario
+
+Antes de liberar el trabajo colaborativo, el propietario del repositorio debe activar en **Settings → Rules → Rulesets** reglas para `main` y `develop`: Pull Request obligatorio, al menos una aprobación, revisión de CODEOWNERS, checks de CI exitosos, sin force-push y sin borrado de ramas protegidas. También debe agregar a los otros integrantes como colaboradores con permiso de escritura.
+
+---
+
 ## 🧩 ¿Qué significa SOLID?
 
 <table>
