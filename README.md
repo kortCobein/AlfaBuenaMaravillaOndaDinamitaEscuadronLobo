@@ -216,10 +216,10 @@ main
 
 <table>
 <tr>
-<td align="center" valign="middle" width="18%">
-<img src="https://iokort.com/mcp/api/file.php?id=d6f1b0b4-55b3-4381-9ce7-7996c931d8b0" alt="SOLID" height="72" />
+<td align="center" valign="middle" width="24%">
+<img src="https://iokort.com/mcp/api/file.php?id=d6f1b0b4-55b3-4381-9ce7-7996c931d8b0" alt="SOLID" height="180" />
 </td>
-<td valign="middle" width="82%">
+<td valign="middle" width="76%">
 SOLID es un conjunto de cinco principios de diseño orientado a objetos que usaremos para mantener el proyecto entendible, desacoplado y fácil de modificar. La idea no es crear capas por crear capas: cada separación debe tener una razón que cualquiera del team pueda explicar.
 </td>
 </tr>
