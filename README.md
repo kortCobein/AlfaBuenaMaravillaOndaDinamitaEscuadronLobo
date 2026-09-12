@@ -2,12 +2,8 @@
 
 <table>
 <tr>
-<td align="center" width="50%">
-<img src="https://iokort.com/mcp/api/file.php?id=f6c82cd6-89ea-4f63-8574-75d569846d64" alt="Identidad institucional UTSJR" height="72" />
-</td>
-<td align="center" width="50%">
-<img src="https://iokort.com/mcp/api/file.php?id=00087600-d213-423b-9647-4721383bf469" alt="Logotipo UTSJR" height="72" />
-</td>
+<td align="center" width="50%"><img src="https://iokort.com/mcp/api/file.php?id=f6c82cd6-89ea-4f63-8574-75d569846d64" alt="Identidad institucional UTSJR" height="72" /></td>
+<td align="center" width="50%"><img src="https://iokort.com/mcp/api/file.php?id=00087600-d213-423b-9647-4721383bf469" alt="Logotipo UTSJR" height="72" /></td>
 </tr>
 </table>
 
@@ -28,15 +24,13 @@
 
 <br>
 
-> **Nueva implementación. Nueva metodología. Mismos requerimientos, una arquitectura completamente nueva en Flutter.**
+> **Nueva implementación en Flutter · trabajo por módulos · integración mediante Pull Requests.**
 
 </div>
 
 ---
 
 ## 🎓 Datos académicos
-
-<div align="center">
 
 | | |
 |:--|:--|
@@ -48,201 +42,181 @@
 | 👥 **Grupo** | DSM1SM-25ERS |
 | 👨‍🏫 **Docente** | Othón Guzmán Docurro |
 
-</div>
-
 ---
 
 ## 👥 Team
 
 <div align="center">
-
 <table>
 <tr>
 <td align="center" width="20%">
 <a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49254.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49254.png" width="125" alt="Angel Ariel Escobedo Lugo" /></a><br>
 <b>Angel Ariel<br>Escobedo<br>Lugo</b><br>
-<sub>Épica 4 · Compras</sub><br>
-<sub>US09 · US10</sub>
+<sub>Épica 4 · US09-US10</sub>
 </td>
 <td align="center" width="20%">
 <a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49194.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49194.png" width="125" alt="Julio Cesar Ramírez Vela" /></a><br>
 <b>Julio Cesar<br>Ramírez<br>Vela</b><br>
-<sub>Épica 5 · Auditorías</sub><br>
-<sub>US11 · US12</sub>
+<sub>Épica 5 · US11-US12</sub>
 </td>
 <td align="center" width="20%">
 <a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/47813.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/47813.png" width="125" alt="Sebastián Mendoza Montoya" /></a><br>
 <b>Sebastián<br>Mendoza<br>Montoya</b><br>
-<sub>Épica 1 · Autenticación</sub><br>
-<sub>US01 · US02</sub>
+<sub>Épica 1 · US01-US02</sub>
 </td>
 <td align="center" width="20%">
 <a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49101.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49101.png" width="125" alt="Leonel Hernández Trejo" /></a><br>
 <b>Leonel<br>Hernández<br>Trejo</b><br>
-<sub>Épica 2 · Catálogo</sub><br>
-<sub>US03 · US04 · US05</sub>
+<sub>Épica 2 · US03-US05</sub>
 </td>
 <td align="center" width="20%">
 <a href="https://iokort.com/mcp/api/file.php?id=4aa093f1-9e2a-4b0e-aae0-0a6371a4e887"><img src="https://iokort.com/mcp/api/file.php?id=4aa093f1-9e2a-4b0e-aae0-0a6371a4e887" width="125" alt="Kurt Cobain Vazquez Sanchez" /></a><br>
 <b><code>Kurt Cobain</code><br><code>Vazquez</code><br><code>Sanchez</code></b><br>
-<sub>Épica 3 · Inventario</sub><br>
-<sub>US06 · US07 · US08</sub>
+<sub>Épica 3 · US06-US08</sub>
 </td>
 </tr>
 </table>
-
-**5 integrantes · 5 épicas · 12 historias de usuario · 1 base Flutter compartida**
-
 </div>
 
 ---
 
-## 🚀 El proyecto
+# 🚨 EMPIEZA AQUÍ — ¿DÓNDE PROGRAMO?
 
-Este repositorio representa una **nueva implementación desde cero en Flutter** de las historias de usuario del proyecto de Desarrollo de Aplicaciones Móviles.
+**Rama Git y carpeta NO son lo mismo.**
 
-El proyecto anterior de **Equipo SixSeven** se utilizó únicamente como referencia documental para recuperar los requerimientos de **US01 a US12**. No se reutilizó su aplicación Android, clases Kotlin, Gradle, recursos ni arquitectura.
+- La **rama** indica en qué versión paralela del proyecto estás trabajando.
+- La **carpeta** indica dónde creas tus archivos `.dart` dentro de VS Code.
 
-Esta versión se desarrollará con una base común en **Flutter + Dart**, principios **SOLID**, trabajo colaborativo mediante ramas y Pull Requests, y una capa de comunicación desacoplada para evitar dependencias directas con APIs externas.
+Ejemplo:
+
+```text
+Rama de Sebas para US01: feature/us01-login-sebas
+Carpeta donde programa:   lib/features/auth/
+```
+
+Primero cambias a tu rama:
+
+```bash
+git fetch origin
+git switch NOMBRE-DE-TU-RAMA
+git pull
+```
+
+Después, en el explorador de VS Code, abres tu carpeta dentro de `lib/features/` y programas ahí.
+
+## 📍 Mapa exacto del team
+
+| Integrante | US | Rama(s) Git | **Carpeta REAL donde programa** |
+|---|---|---|---|
+| **Sebas** | US01-US02 | `feature/us01-login-sebas` · `feature/us02-logout-sebas` | [`lib/features/auth/`](lib/features/auth/) |
+| **Leonel** | US03-US05 | `feature/us03-catalogo-leonel` · `feature/us04-filtros-leonel` · `feature/us05-detalle-producto-leonel` | [`lib/features/catalog/`](lib/features/catalog/) |
+| **Cobain** | US06-US08 | `feature/us06-agregar-producto-cobain` · `feature/us07-editar-producto-cobain` · `feature/us08-eliminar-producto-cobain` | [`lib/features/inventory/`](lib/features/inventory/) |
+| **Ariel** | US09-US10 | `feature/us09-agregar-carrito-ariel` · `feature/us10-gestionar-carrito-ariel` | [`lib/features/cart/`](lib/features/cart/) |
+| **JC** | US11-US12 | `feature/us11-listar-usuarios-jc` · `feature/us12-historico-carritos-jc` | [`lib/features/audit/`](lib/features/audit/) |
+
+Cada carpeta ya existe y tiene un `README.md` propio con ejemplos de archivos.
+
+### Ejemplo real: Sebas trabajando US01
+
+```bash
+git switch feature/us01-login-sebas
+```
+
+Luego crea, según lo necesite la solución:
+
+```text
+lib/features/auth/screens/login_screen.dart
+lib/features/auth/controllers/login_controller.dart
+lib/features/auth/services/auth_service.dart
+lib/features/auth/repositories/auth_repository.dart
+lib/features/auth/models/user_session.dart
+lib/features/auth/widgets/login_form.dart
+```
+
+No tiene que crear todos esos archivos por obligación. Son ejemplos de dónde va cada responsabilidad.
 
 ---
 
-# 📋 Historias de usuario y responsables
+## 🧱 Estructura de cada módulo
 
-## 🔐 Épica 1 · Autenticación
+Todos los módulos siguen la misma forma:
 
-**Responsable: Sebastián Mendoza Montoya · Sebas**
+```text
+lib/features/<modulo>/
+├── models/         ← datos y entidades
+├── services/       ← comunicación con backend
+├── repositories/   ← acceso/coordinación de datos
+├── controllers/    ← lógica y estado
+├── screens/        ← pantallas completas
+└── widgets/        ← componentes visuales reutilizables
+```
 
+### Archivos compartidos
+
+Estas zonas **no pertenecen a una sola persona** y no deben modificarse a lo loco:
+
+```text
+lib/main.dart
+lib/app/
+lib/core/
+pubspec.yaml
+```
+
+Si una US necesita tocar algo compartido, el cambio debe ser pequeño y explicarse en la Pull Request.
+
+La URL del backend vive únicamente en:
+
+```text
+lib/core/config/api_config.dart
+```
+
+---
+
+## 📋 Historias de usuario
+
+### 🔐 Épica 1 · Autenticación — Sebas
 - [US01 · Login y asignación local de perfiles](docs/US01-login-y-asignacion-local-de-perfiles.md)
 - [US02 · Cierre de sesión y limpieza de credenciales](docs/US02-cierre-de-sesion-y-limpieza-de-credenciales.md)
 
-Ramas asignadas:
-
-```text
-feature/us01-login-sebas
-feature/us02-logout-sebas
-```
-
-## 🛍️ Épica 2 · Catálogo
-
-**Responsable: Leonel Hernández Trejo · Leonel**
-
+### 🛍️ Épica 2 · Catálogo — Leonel
 - [US03 · Visualizar catálogo general de productos](docs/US03-visualizar-catalogo-general-de-productos.md)
 - [US04 · Filtrar productos por categoría](docs/US04-filtrar-productos-por-categoria.md)
 - [US05 · Ver detalle del producto con interfaz dinámica](docs/US05-ver-detalle-del-producto-con-interfaz-dinamica.md)
 
-Ramas asignadas:
-
-```text
-feature/us03-catalogo-leonel
-feature/us04-filtros-leonel
-feature/us05-detalle-producto-leonel
-```
-
-## 📦 Épica 3 · Inventario
-
-**Responsable: Kurt Cobain Vazquez Sanchez · Cobain**
-
+### 📦 Épica 3 · Inventario — Cobain
 - [US06 · Agregar nuevo producto al catálogo](docs/US06-agregar-nuevo-producto-al-catalogo.md)
 - [US07 · Editar información de un artículo](docs/US07-editar-informacion-de-un-articulo.md)
 - [US08 · Eliminar producto del sistema](docs/US08-eliminar-producto-del-sistema.md)
 
-Ramas asignadas:
-
-```text
-feature/us06-agregar-producto-cobain
-feature/us07-editar-producto-cobain
-feature/us08-eliminar-producto-cobain
-```
-
-## 🛒 Épica 4 · Compras
-
-**Responsable: Angel Ariel Escobedo Lugo · Ariel**
-
+### 🛒 Épica 4 · Compras — Ariel
 - [US09 · Añadir artículos al carrito personal](docs/US09-anadir-articulos-al-carrito-personal.md)
 - [US10 · Visualizar, modificar o eliminar artículos del carrito](docs/US10-visualizar-modificar-o-eliminar-articulos-del-carrito.md)
 
-Ramas asignadas:
-
-```text
-feature/us09-agregar-carrito-ariel
-feature/us10-gestionar-carrito-ariel
-```
-
-## 🔎 Épica 5 · Auditorías
-
-**Responsable: Julio Cesar Ramírez Vela · JC**
-
+### 🔎 Épica 5 · Auditorías — JC
 - [US11 · Listar todos los usuarios registrados](docs/US11-listar-todos-los-usuarios-registrados.md)
 - [US12 · Visualizar histórico de carritos globales](docs/US12-visualizar-historico-de-carritos-globales.md)
 
-Ramas asignadas:
-
-```text
-feature/us11-listar-usuarios-jc
-feature/us12-historico-carritos-jc
-```
-
 ---
 
-## 🌿 Flujo de ramas
+## 🌿 Flujo Git
 
 ```text
-main
-└── develop
-    ├── feature/us01-login-sebas
-    ├── feature/us02-logout-sebas
-    ├── feature/us03-catalogo-leonel
-    ├── feature/us04-filtros-leonel
-    ├── feature/us05-detalle-producto-leonel
-    ├── feature/us06-agregar-producto-cobain
-    ├── feature/us07-editar-producto-cobain
-    ├── feature/us08-eliminar-producto-cobain
-    ├── feature/us09-agregar-carrito-ariel
-    ├── feature/us10-gestionar-carrito-ariel
-    ├── feature/us11-listar-usuarios-jc
-    └── feature/us12-historico-carritos-jc
+main                  ← versión estable
+  ↑
+develop               ← integración del sprint
+  ↑
+feature/usXX-*         ← aquí programa cada integrante
 ```
 
-- `main`: versión estable del proyecto.
-- `develop`: integración del sprint.
-- `feature/*`: desarrollo aislado de cada historia.
-- Las historias terminadas se integrarán mediante **Pull Request hacia `develop`**.
-- `develop` llegará a `main` únicamente cuando la integración esté revisada y estable.
-
----
-
-## 🚦 Cómo trabajar en este repositorio
-
-El repositorio ya incluye una base común para que todos trabajemos de la misma manera: **Flutter CI**, plantilla de Pull Request, `CODEOWNERS`, configuración compartida de VS Code, guía de contribución y un único punto para la URL del backend en `lib/core/config/api_config.dart`.
-
-> La guía detallada vive en [`CONTRIBUTING.md`](CONTRIBUTING.md). Esta sección es la versión rápida para empezar sin equivocarse de rama.
-
-### 1. Preparación inicial en VS Code
-
-```bash
-git clone https://github.com/kortCobein/AlfaBuenaMaravillaOndaDinamitaEscuadronLobo.git
-cd AlfaBuenaMaravillaOndaDinamitaEscuadronLobo
-code .
-flutter pub get
-```
-
-Todos trabajamos en **VS Code** con las extensiones de **Dart** y **Flutter**.
-
-### 2. Entrar únicamente a tu rama
-
-Ejemplo para US01:
+Una historia se trabaja así:
 
 ```bash
 git fetch origin
-git switch feature/us01-login-sebas
-git pull origin feature/us01-login-sebas
-git branch --show-current
+git switch feature/usXX-nombre
+git pull
 ```
 
-La última línea sirve para comprobar que **no estás en `main` ni en `develop`** antes de programar.
-
-### 3. Antes de cada entrega
+Antes de entregar:
 
 ```bash
 dart format .
@@ -251,56 +225,23 @@ flutter test
 git status
 ```
 
-Si `flutter analyze` o `flutter test` fallan, la historia todavía no está lista para revisión.
-
-### 4. Commit y push
+Luego:
 
 ```bash
 git add .
-git commit -m "feat(usXX): descripcion corta del cambio"
-git push -u origin feature/usXX-nombre
+git commit -m "feat(usXX): descripcion corta"
+git push
 ```
 
-Después del primer push de esa rama basta con `git push`.
-
-### 5. Pull Request
-
-Cada historia terminada se envía así:
+Después se abre Pull Request:
 
 ```text
-feature/usXX-*  ->  develop
+feature/usXX-*  →  develop
 ```
 
-Nunca se abre una PR de una `feature/*` directamente hacia `main`. La plantilla de Pull Request pedirá confirmar criterios de aceptación, SOLID, pruebas y que el autor puede explicar su código.
+Nunca `feature/* → main`.
 
-### 6. Empezar la siguiente US de tu épica
-
-Cuando la historia anterior ya esté integrada en `develop`, la siguiente rama debe actualizarse antes de programar:
-
-```bash
-git fetch origin
-git switch develop
-git pull origin develop
-git switch feature/usXX-siguiente
-git merge develop
-```
-
-Así cada historia nueva comienza sobre la integración más reciente y se reducen conflictos.
-
-### 7. Reglas que no se negocian
-
-- No trabajar directamente en `main` o `develop`.
-- No usar `git push --force`.
-- No mezclar varias historias en un mismo PR sin una razón técnica real.
-- No subir contraseñas, tokens o secretos.
-- No consumir APIs externas directamente desde widgets o módulos funcionales.
-- La URL del backend se cambia sólo en `lib/core/config/api_config.dart`.
-- Cada integrante debe poder explicar el código que entrega.
-- La creatividad visual y técnica está permitida siempre que se respeten los criterios de aceptación.
-
-### Configuración administrativa pendiente del propietario
-
-Antes de liberar el trabajo colaborativo, el propietario del repositorio debe activar en **Settings → Rules → Rulesets** reglas para `main` y `develop`: Pull Request obligatorio, al menos una aprobación, revisión de CODEOWNERS, checks de CI exitosos, sin force-push y sin borrado de ramas protegidas. También debe agregar a los otros integrantes como colaboradores con permiso de escritura.
+La guía completa está en [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ---
 
@@ -312,101 +253,54 @@ Antes de liberar el trabajo colaborativo, el propietario del repositorio debe ac
 <img src="https://iokort.com/mcp/api/file.php?id=d6f1b0b4-55b3-4381-9ce7-7996c931d8b0" alt="SOLID" height="180" />
 </td>
 <td valign="middle" width="76%">
-SOLID es un conjunto de cinco principios de diseño orientado a objetos que usaremos para mantener el proyecto entendible, desacoplado y fácil de modificar. La idea no es crear capas por crear capas: cada separación debe tener una razón que cualquiera del team pueda explicar.
+SOLID es un conjunto de cinco principios de diseño orientado a objetos que usaremos para mantener el proyecto entendible, desacoplado y fácil de modificar. No se trata de crear capas por crear capas: cada separación debe tener una razón que cualquiera del team pueda explicar.
 </td>
 </tr>
 </table>
 
-| Principio | Qué significa | Cómo lo aplicaremos en Flutter |
-|:--|:--|:--|
-| **S · Single Responsibility** | Una clase o módulo debe tener una responsabilidad principal. | Los widgets muestran UI; los servicios hacen peticiones; los repositorios coordinan datos; los controladores manejan estado. |
-| **O · Open/Closed** | El código debe poder extenderse sin modificar constantemente lo ya estable. | Podremos agregar nuevas fuentes de datos, estrategias o widgets sin reescribir módulos completos. |
-| **L · Liskov Substitution** | Una implementación debe poder sustituir a su abstracción sin romper el comportamiento esperado. | Un repositorio remoto, mock o local deberá cumplir el mismo contrato para que la UI no dependa de cómo se obtienen los datos. |
-| **I · Interface Segregation** | Es mejor tener contratos pequeños y específicos que una interfaz enorme. | Cada servicio expondrá sólo las operaciones necesarias para su dominio, por ejemplo autenticación, catálogo o carrito. |
-| **D · Dependency Inversion** | Las capas de alto nivel dependen de abstracciones, no de implementaciones concretas. | Los controladores dependerán de repositorios o contratos y no directamente de `http`, URLs o una API específica. |
+| Principio | Aplicación en Flutter |
+|:--|:--|
+| **S · Single Responsibility** | Widgets para UI; controladores para estado; servicios para comunicación; repositorios para datos. |
+| **O · Open/Closed** | Extender comportamiento sin reescribir módulos estables. |
+| **L · Liskov Substitution** | Implementaciones intercambiables respetan el mismo contrato. |
+| **I · Interface Segregation** | Contratos pequeños y específicos por dominio. |
+| **D · Dependency Inversion** | Capas superiores dependen de abstracciones, no de URLs o clientes HTTP concretos. |
 
-### Arquitectura acordada
+Arquitectura objetivo:
 
 ```text
 UI / Widgets
      ↓
-Estado / Controlador
+Controller / Estado
      ↓
-Repositorio
+Repository
      ↓
-Servicio
+Service
      ↓
 ApiClient
      ↓
 ApiConfig.baseUrl
      ↓
-Backend / Function del team
+Backend / Function
      ↓
 API externa
 ```
 
-### Regla de comunicación remota
-
-La aplicación Flutter **no consumirá APIs externas directamente**. Todas las solicitudes deberán pasar por el backend o función intermediaria definida por el team.
-
-La URL base deberá estar centralizada en un único archivo de configuración. De esta forma, cambiar de backend o proveedor no obligará a modificar cada módulo funcional.
+La app Flutter **no consume APIs externas directamente**.
 
 ---
 
-## 🧰 Stack
+## ✅ Reglas rápidas
 
-<div align="center">
-
-| Tecnología | Uso dentro del proyecto |
-|:--:|:--|
-| **Flutter** | Framework principal |
-| **Dart** | Lenguaje de desarrollo |
-| **Backend / Function** | Capa intermediaria para comunicación remota |
-| **API externa** | Fuente de datos detrás del backend |
-| **Git** | Control de versiones |
-| **GitHub** | Colaboración, ramas y Pull Requests |
-| **SOLID** | Principios de diseño y separación de responsabilidades |
-
-</div>
-
----
-
-## 🗂️ Organización documental
-
-```text
-AlfaBuenaMaravillaOndaDinamitaEscuadronLobo/
-│
-├── android/
-├── lib/
-├── test/
-├── pubspec.yaml
-├── pubspec.lock
-├── README.md
-│
-└── docs/
-    ├── US01-...
-    ├── US02-...
-    ├── US03-...
-    ├── ...
-    └── US12-...
-```
-
-`README.md` funciona como **índice único del proyecto**. Los archivos dentro de `docs/` contienen los requerimientos detallados de cada historia de usuario.
-
----
-
-## ✅ Reglas generales de desarrollo
-
-- Cada integrante desarrolla únicamente sobre la rama correspondiente a su historia.
-- Cada historia debe cumplir sus criterios de aceptación.
-- El código debe aplicar SOLID cuando corresponda y mantener responsabilidades claras.
-- Cada integrante debe ser capaz de explicar completamente el código que entrega.
-- Se permite creatividad visual y técnica siempre que no se alteren los requerimientos funcionales.
-- No se consumirán APIs externas directamente desde widgets ni módulos funcionales.
-- Los commits deben ser pequeños y descriptivos.
-- Ninguna `feature/*` se integra directamente en `main`.
-- Toda integración pasa primero por `develop` mediante Pull Request.
-- Una historia no se considera terminada si rompe otra parte del proyecto.
+- Cada persona programa dentro de su módulo en `lib/features/`.
+- Cada US se desarrolla únicamente en su rama `feature/*` correspondiente.
+- Nadie desarrolla directamente en `main` o `develop`.
+- Nada de `git push --force`.
+- No subir tokens, contraseñas o secretos.
+- No poner URLs externas dentro de pantallas o widgets.
+- Cada integrante debe poder explicar completamente lo que entrega.
+- La creatividad visual/técnica está permitida si se respetan criterios de aceptación.
+- `flutter analyze` y `flutter test` deben pasar antes del PR.
 
 ---
 
