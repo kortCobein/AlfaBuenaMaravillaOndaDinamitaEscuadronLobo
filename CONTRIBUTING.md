@@ -1,6 +1,54 @@
 # Guía de contribución — Sprint 2
 
-Este repositorio usa un flujo simple para que cinco personas puedan trabajar en paralelo sin romper la base Flutter.
+Este repositorio usa un flujo simple para que cinco personas trabajen en paralelo sin romper la base Flutter.
+
+## 🚨 Antes de programar: rama ≠ carpeta
+
+Hay dos cosas distintas:
+
+1. **Rama Git**: la versión del proyecto en la que trabajas.
+2. **Carpeta dentro de `lib/`**: el lugar físico donde creas tus archivos `.dart`.
+
+Ejemplo: Sebas trabaja la US01 en la rama:
+
+```text
+feature/us01-login-sebas
+```
+
+pero programa dentro de:
+
+```text
+lib/features/auth/
+```
+
+La rama se selecciona con Git. La carpeta se abre en el explorador de VS Code.
+
+## 📍 Dónde programa cada integrante
+
+| Integrante | Historias | Ramas Git | Carpeta donde crea su código |
+|---|---|---|---|
+| Sebastián Mendoza Montoya | US01, US02 | `feature/us01-login-sebas`, `feature/us02-logout-sebas` | `lib/features/auth/` |
+| Leonel Hernández Trejo | US03, US04, US05 | `feature/us03-catalogo-leonel`, `feature/us04-filtros-leonel`, `feature/us05-detalle-producto-leonel` | `lib/features/catalog/` |
+| Kurt Cobain Vazquez Sanchez | US06, US07, US08 | `feature/us06-agregar-producto-cobain`, `feature/us07-editar-producto-cobain`, `feature/us08-eliminar-producto-cobain` | `lib/features/inventory/` |
+| Angel Ariel Escobedo Lugo | US09, US10 | `feature/us09-agregar-carrito-ariel`, `feature/us10-gestionar-carrito-ariel` | `lib/features/cart/` |
+| Julio Cesar Ramírez Vela | US11, US12 | `feature/us11-listar-usuarios-jc`, `feature/us12-historico-carritos-jc` | `lib/features/audit/` |
+
+Cada una de esas carpetas ya existe y contiene su propio `README.md` con ejemplos específicos.
+
+## 🧱 Qué significan las subcarpetas
+
+Dentro de cada módulo ya existen:
+
+```text
+models/         datos y entidades del módulo
+services/       comunicación con el backend
+repositories/   acceso/coordinación de datos
+controllers/    lógica y estado
+screens/        pantallas completas
+widgets/        componentes visuales reutilizables
+```
+
+No es obligatorio crear un archivo en todas. SOLID se aplica con criterio: separa responsabilidades cuando realmente existan.
 
 ## Herramientas comunes
 
@@ -11,25 +59,15 @@ Todos trabajaremos con:
 - Git
 - GitHub
 
-Antes de empezar, en VS Code instala las extensiones recomendadas cuando aparezca el aviso del repositorio.
+En VS Code instala las extensiones recomendadas de Dart y Flutter cuando aparezca el aviso del repositorio.
 
 ## Regla principal
 
 **Nadie desarrolla directamente en `main` ni en `develop`.**
 
-Cada historia de usuario ya tiene una rama `feature/*` asignada. El trabajo se hace únicamente en esa rama y se entrega mediante Pull Request hacia `develop`.
+Cada historia de usuario ya tiene una rama `feature/*` asignada. El trabajo se hace en esa rama y se entrega mediante Pull Request hacia `develop`.
 
 `main` representa la versión estable. `develop` representa la integración del sprint.
-
-## Asignaciones
-
-| Integrante | Épica | Historias | Ramas |
-|---|---|---|---|
-| Sebastián Mendoza Montoya | Épica 1 · Autenticación | US01, US02 | `feature/us01-login-sebas`, `feature/us02-logout-sebas` |
-| Leonel Hernández Trejo | Épica 2 · Catálogo | US03, US04, US05 | `feature/us03-catalogo-leonel`, `feature/us04-filtros-leonel`, `feature/us05-detalle-producto-leonel` |
-| Kurt Cobain Vazquez Sanchez | Épica 3 · Inventario | US06, US07, US08 | `feature/us06-agregar-producto-cobain`, `feature/us07-editar-producto-cobain`, `feature/us08-eliminar-producto-cobain` |
-| Angel Ariel Escobedo Lugo | Épica 4 · Compras | US09, US10 | `feature/us09-agregar-carrito-ariel`, `feature/us10-gestionar-carrito-ariel` |
-| Julio Cesar Ramírez Vela | Épica 5 · Auditorías | US11, US12 | `feature/us11-listar-usuarios-jc`, `feature/us12-historico-carritos-jc` |
 
 ## Primera vez en una computadora
 
@@ -42,7 +80,7 @@ code .
 flutter pub get
 ```
 
-Comprueba que Flutter esté disponible:
+Comprueba Flutter:
 
 ```bash
 flutter doctor
@@ -50,31 +88,40 @@ flutter doctor
 
 ## Empezar una historia
 
-Ejemplo: Sebastián va a trabajar US01.
+Ejemplo: Sebastián comienza US01.
 
 ```bash
 git fetch origin
 git switch feature/us01-login-sebas
 git pull origin feature/us01-login-sebas
-```
-
-Antes de escribir código, confirma la rama actual:
-
-```bash
 git branch --show-current
 ```
 
-Debe mostrar exactamente la rama de la historia que vas a desarrollar.
+Después, en el explorador de VS Code, abre:
+
+```text
+lib/features/auth/
+```
+
+y crea ahí los archivos necesarios. Por ejemplo:
+
+```text
+lib/features/auth/screens/login_screen.dart
+lib/features/auth/controllers/login_controller.dart
+lib/features/auth/services/auth_service.dart
+```
+
+Antes de escribir código, `git branch --show-current` debe mostrar exactamente la rama de tu historia.
 
 ## Mientras trabajas
 
-Haz cambios pequeños y comprensibles. Revisa frecuentemente:
+Revisa frecuentemente:
 
 ```bash
 git status
 ```
 
-Antes de cada entrega local:
+Antes de entregar:
 
 ```bash
 dart format .
@@ -86,7 +133,7 @@ No subas código que no puedas explicar.
 
 ## Commits
 
-Usaremos mensajes breves y descriptivos. Ejemplos:
+Ejemplos:
 
 ```bash
 git add .
@@ -97,14 +144,7 @@ git commit -m "feat(us03): mostrar catalogo de productos"
 git commit -m "fix(us09): evitar productos duplicados en carrito"
 ```
 
-Prefijos recomendados:
-
-- `feat`: funcionalidad nueva.
-- `fix`: corrección.
-- `refactor`: reorganización sin cambiar comportamiento.
-- `docs`: documentación.
-- `test`: pruebas.
-- `chore`: configuración o mantenimiento.
+Prefijos recomendados: `feat`, `fix`, `refactor`, `docs`, `test`, `chore`.
 
 Evita commits como `cambios`, `final`, `ya quedo`, `prueba` o `cosas`.
 
@@ -131,17 +171,13 @@ En GitHub abre un Pull Request con:
 
 Nunca abras una PR de una `feature/*` directamente hacia `main`.
 
-Usa como título:
+Título recomendado:
 
 ```text
 [US03] Visualizar catálogo general de productos
 ```
 
-La plantilla de Pull Request te pedirá criterios de aceptación, pruebas realizadas, aplicación de SOLID y una confirmación de que puedes explicar el código.
-
 ## Si `develop` avanzó mientras trabajabas
-
-Antes de terminar tu historia, integra los cambios recientes:
 
 ```bash
 git fetch origin
@@ -151,9 +187,9 @@ git switch NOMBRE-DE-TU-RAMA
 git merge develop
 ```
 
-Si aparece un conflicto, **no lo resuelvas a ciegas y no uses `--force`**. Coordínalo antes de subir cambios.
+Si aparece un conflicto, no uses `--force` ni borres trabajo de otra persona.
 
-Después vuelve a ejecutar:
+Después ejecuta otra vez:
 
 ```bash
 dart format .
@@ -163,42 +199,46 @@ flutter test
 
 ## SOLID
 
-SOLID se aplicará con criterio, no como cantidad de carpetas.
-
-- La UI no debe hacer peticiones HTTP directamente.
+- La UI no hace peticiones HTTP directamente.
 - Los widgets se concentran en presentación e interacción.
-- La lógica de datos se separa de las vistas.
-- Los módulos deben depender de contratos o responsabilidades claras cuando sea útil.
-- Evita clases gigantes con autenticación, red, navegación y UI mezcladas.
+- La lógica se separa de las vistas.
+- Los servicios hablan con backend.
+- Los repositorios encapsulan acceso a datos cuando tenga sentido.
+- Evita clases gigantes que mezclen UI, red, estado y navegación.
 
-Cada integrante debe poder justificar dónde aplicó separación de responsabilidades y por qué.
+Cada integrante debe poder justificar por qué separó su código de esa manera.
 
 ## APIs y backend intermediario
 
-Flutter no consumirá directamente proveedores externos. La aplicación se comunicará con el backend/Function del team mediante una URL base centralizada.
+Flutter no consumirá proveedores externos directamente.
 
-No escribas URLs externas dentro de widgets, pantallas ni controladores.
+La aplicación se comunicará con el backend/Function del team. La URL base está centralizada en:
 
-Cuando se defina el endpoint del backend, deberá existir un único punto de configuración para cambiar la URL sin modificar cada módulo.
+```text
+lib/core/config/api_config.dart
+```
 
-## Archivos sensibles al conflicto
+No escribas URLs externas dentro de widgets, pantallas o controladores.
 
-Ten especial cuidado con:
+## Archivos compartidos: no tocarlos a lo loco
+
+Especial cuidado con:
 
 - `lib/main.dart`
+- `lib/app/`
+- `lib/core/`
 - `pubspec.yaml`
-- navegación/rutas compartidas
-- configuración global de tema
-- archivos de red compartidos
+- rutas/navegación global
+- tema global
 
-Si tu historia necesita modificar uno de estos archivos, mantenlo como un cambio pequeño y explícalo en la PR.
+Si tu US necesita modificar uno, haz el cambio mínimo y explícalo en la PR.
 
 ## Prohibido
 
 - `git push --force` o `git push -f`.
 - desarrollar sobre `main`.
 - desarrollar sobre `develop`.
-- borrar trabajo de otro integrante para resolver un conflicto.
+- borrar trabajo de otro integrante.
 - copiar una solución sin poder explicarla.
 - subir secretos, tokens, contraseñas o claves.
 - consumir APIs externas directamente desde una pantalla.
@@ -207,16 +247,16 @@ Si tu historia necesita modificar uno de estos archivos, mantenlo como un cambio
 
 Una US sólo está terminada cuando:
 
-- cumple sus criterios de aceptación;
-- el integrante puede explicar el código completo que agregó;
-- `dart format .` quedó aplicado;
+- cumple criterios de aceptación;
+- el integrante puede explicar su código;
+- `dart format .` está aplicado;
 - `flutter analyze` termina correctamente;
 - `flutter test` termina correctamente;
 - no rompe otras historias;
 - no contiene secretos ni URLs externas dispersas;
 - tiene commits descriptivos;
 - tiene Pull Request hacia `develop`;
-- la revisión del sprint acepta la integración.
+- la revisión acepta la integración.
 
 ## Sprint 2
 
