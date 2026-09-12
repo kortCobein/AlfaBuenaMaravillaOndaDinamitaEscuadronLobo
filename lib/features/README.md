@@ -1,11 +1,13 @@
-# Feature workspace
+# Features
 
-Esta carpeta contiene los módulos funcionales del proyecto. Cada integrante trabaja principalmente dentro de la carpeta de su épica y en la rama Git asignada a cada historia de usuario.
+Cada integrante tiene una carpeta principal de trabajo dentro de `lib/features/`.
 
-- auth: Sebas · US01-US02
-- catalog: Leonel · US03-US05
-- inventory: Cobain · US06-US08
-- cart: Ariel · US09-US10
-- audit: JC · US11-US12
+| Integrante | Historias | Carpeta |
+|---|---|---|
+| Sebas | US01-US02 | `auth/` |
+| Leonel | US03-US05 | `catalog/` |
+| Cobain | US06-US08 | `inventory/` |
+| Ariel | US09-US10 | `cart/` |
+| JC | US11-US12 | `audit/` |
 
-Las ramas `feature/...` son ramas de Git, no carpetas del proyecto.
+La rama Git indica en qué versión del proyecto trabajas; la carpeta indica dónde creas tus archivos Dart. Cada módulo tiene su propio README con ejemplos.
