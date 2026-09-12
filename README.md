@@ -1,6 +1,21 @@
 <div align="center">
 
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="https://iokort.com/mcp/api/file.php?id=f6c82cd6-89ea-4f63-8574-75d569846d64" alt="Identidad institucional UTSJR" height="90" />
+</td>
+<td align="center" width="50%">
+<img src="https://iokort.com/mcp/api/file.php?id=00087600-d213-423b-9647-4721383bf469" alt="Logotipo UTSJR" height="90" />
+</td>
+</tr>
+</table>
+
 <img src="docs/readme-equipo-alfa.svg" alt="Equipo Alfa Buena Maravilla Onda Dinamita Escuadrón Lobo" width="100%" />
+
+<br>
+
+<img src="https://iokort.com/mcp/api/file.php?id=d6f1b0b4-55b3-4381-9ce7-7996c931d8b0" alt="Decoración Equipo Alfa" width="100%" />
 
 <br>
 
@@ -49,11 +64,36 @@
 
 <table>
 <tr>
-<td align="center" width="20%"><b>Angel Ariel<br>Escobedo Lugo</b><br><sub>Épica 4 · Compras</sub></td>
-<td align="center" width="20%"><b>Julio Cesar<br>Ramírez Vela</b><br><sub>Épica 5 · Auditorías</sub></td>
-<td align="center" width="20%"><b>Sebastián<br>Mendoza Montoya</b><br><sub>Épica 1 · Autenticación</sub></td>
-<td align="center" width="20%"><b>Leonel<br>Hernández Trejo</b><br><sub>Épica 2 · Catálogo</sub></td>
-<td align="center" width="20%"><b>Kurt Cobain<br>Vazquez Sanchez</b><br><sub>Épica 3 · Inventario</sub></td>
+<td align="center" width="20%">
+<a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49254.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49254.png" width="125" alt="Angel Ariel Escobedo Lugo" /></a><br>
+<b>Angel Ariel<br>Escobedo Lugo</b><br>
+<sub>Épica 4 · Compras</sub><br>
+<sub>US09 · US10</sub>
+</td>
+<td align="center" width="20%">
+<a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49194.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49194.png" width="125" alt="Julio Cesar Ramírez Vela" /></a><br>
+<b>Julio Cesar<br>Ramírez Vela</b><br>
+<sub>Épica 5 · Auditorías</sub><br>
+<sub>US11 · US12</sub>
+</td>
+<td align="center" width="20%">
+<a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/47813.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/47813.png" width="125" alt="Sebastián Mendoza Montoya" /></a><br>
+<b>Sebastián<br>Mendoza Montoya</b><br>
+<sub>Épica 1 · Autenticación</sub><br>
+<sub>US01 · US02</sub>
+</td>
+<td align="center" width="20%">
+<a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49101.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49101.png" width="125" alt="Leonel Hernández Trejo" /></a><br>
+<b>Leonel<br>Hernández Trejo</b><br>
+<sub>Épica 2 · Catálogo</sub><br>
+<sub>US03 · US04 · US05</sub>
+</td>
+<td align="center" width="20%">
+<a href="https://iokort.com/mcp/api/file.php?id=4aa093f1-9e2a-4b0e-aae0-0a6371a4e887"><img src="https://iokort.com/mcp/api/file.php?id=4aa093f1-9e2a-4b0e-aae0-0a6371a4e887" width="125" alt="Kurt Cobain Vazquez Sanchez" /></a><br>
+<b>Kurt Cobain<br>Vazquez Sanchez</b><br>
+<sub>Épica 3 · Inventario</sub><br>
+<sub>US06 · US07 · US08</sub>
+</td>
 </tr>
 </table>
 
@@ -269,6 +309,10 @@ AlfaBuenaMaravillaOndaDinamitaEscuadronLobo/
 <div align="center">
 
 ### 🐺 EQUIPO ALFA BUENA MARAVILLA ONDA DINAMITA ESCUADRÓN LOBO
+
+<img src="https://iokort.com/mcp/api/file.php?id=d6f1b0b4-55b3-4381-9ce7-7996c931d8b0" alt="Equipo Alfa" width="65%" />
+
+<br>
 
 **Universidad Tecnológica de San Juan del Río**  
 Ingeniería en Desarrollo de Software Multiplataforma · 4.º Cuatrimestre
