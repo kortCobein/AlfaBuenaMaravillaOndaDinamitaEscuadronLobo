@@ -3,24 +3,23 @@
 <table>
 <tr>
 <td align="center" width="50%">
-<img src="https://iokort.com/mcp/api/file.php?id=f6c82cd6-89ea-4f63-8574-75d569846d64" alt="Identidad institucional UTSJR" height="90" />
+<img src="https://iokort.com/mcp/api/file.php?id=f6c82cd6-89ea-4f63-8574-75d569846d64" alt="Identidad institucional UTSJR" height="72" />
 </td>
 <td align="center" width="50%">
-<img src="https://iokort.com/mcp/api/file.php?id=00087600-d213-423b-9647-4721383bf469" alt="Logotipo UTSJR" height="90" />
+<img src="https://iokort.com/mcp/api/file.php?id=00087600-d213-423b-9647-4721383bf469" alt="Logotipo UTSJR" height="72" />
 </td>
 </tr>
 </table>
 
-<img src="docs/readme-equipo-alfa.svg" alt="Equipo Alfa Buena Maravilla Onda Dinamita Escuadrón Lobo" width="100%" />
+# 🐺 Alfa Buena Maravilla Onda Dinamita Escuadrón Lobo
 
-<br>
+### Desarrollo de Aplicaciones Móviles · Flutter
 
-<img src="https://iokort.com/mcp/api/file.php?id=d6f1b0b4-55b3-4381-9ce7-7996c931d8b0" alt="Decoración Equipo Alfa" width="100%" />
+<img src="https://iokort.com/mcp/api/file.php?id=d6f1b0b4-55b3-4381-9ce7-7996c931d8b0" alt="Decoración" width="30" />
 
 <br>
 
 <img src="https://img.shields.io/badge/UTSJR-Universidad%20Tecnológica-00245A?style=for-the-badge" alt="UTSJR" />
-<img src="https://img.shields.io/badge/Equipo-Alfa%20Buena%20Mara-009D81?style=for-the-badge" alt="Equipo Alfa" />
 <img src="https://img.shields.io/badge/Estado-En%20desarrollo-2ea44f?style=for-the-badge" alt="Estado" />
 
 <br><br>
@@ -52,7 +51,6 @@
 | 🧩 **Unidad** | Unidad 1 |
 | 👥 **Grupo** | DSM1SM-25ERS |
 | 👨‍🏫 **Docente** | Othón Guzmán Docurro |
-| 🐺 **Equipo** | Alfa Buena Maravilla Onda Dinamita Escuadrón Lobo |
 
 </div>
 
@@ -78,19 +76,20 @@
 </td>
 <td align="center" width="20%">
 <a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/47813.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/47813.png" width="125" alt="Sebastián Mendoza Montoya" /></a><br>
-<b>Sebastián<br>Mendoza Montoya</b><br>
+<b>Sebastián Mendoza<br>Montoya</b><br>
 <sub>Épica 1 · Autenticación</sub><br>
 <sub>US01 · US02</sub>
 </td>
 <td align="center" width="20%">
 <a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49101.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49101.png" width="125" alt="Leonel Hernández Trejo" /></a><br>
-<b>Leonel<br>Hernández Trejo</b><br>
+<b>Leonel Hernández<br>Trejo</b><br>
 <sub>Épica 2 · Catálogo</sub><br>
 <sub>US03 · US04 · US05</sub>
 </td>
 <td align="center" width="20%">
 <a href="https://iokort.com/mcp/api/file.php?id=4aa093f1-9e2a-4b0e-aae0-0a6371a4e887"><img src="https://iokort.com/mcp/api/file.php?id=4aa093f1-9e2a-4b0e-aae0-0a6371a4e887" width="125" alt="Kurt Cobain Vazquez Sanchez" /></a><br>
 <b>Kurt Cobain<br>Vazquez Sanchez</b><br>
+<sub>Capitán del sprint</sub><br>
 <sub>Épica 3 · Inventario</sub><br>
 <sub>US06 · US07 · US08</sub>
 </td>
@@ -147,7 +146,7 @@ feature/us05-detalle-producto-leonel
 
 ## 📦 Épica 3 · Inventario
 
-**Responsable: Kurt Cobain Vazquez Sanchez · Cobain**
+**Responsable: Kurt Cobain Vazquez Sanchez · Cobain · Capitán del sprint**
 
 - [US06 · Agregar nuevo producto al catálogo](docs/US06-agregar-nuevo-producto-al-catalogo.md)
 - [US07 · Editar información de un artículo](docs/US07-editar-informacion-de-un-articulo.md)
@@ -279,7 +278,6 @@ AlfaBuenaMaravillaOndaDinamitaEscuadronLobo/
 ├── README.md
 │
 └── docs/
-    ├── readme-equipo-alfa.svg
     ├── US01-...
     ├── US02-...
     ├── US03-...
@@ -307,12 +305,6 @@ AlfaBuenaMaravillaOndaDinamitaEscuadronLobo/
 ---
 
 <div align="center">
-
-### 🐺 EQUIPO ALFA BUENA MARAVILLA ONDA DINAMITA ESCUADRÓN LOBO
-
-<img src="https://iokort.com/mcp/api/file.php?id=d6f1b0b4-55b3-4381-9ce7-7996c931d8b0" alt="Equipo Alfa" width="65%" />
-
-<br>
 
 **Universidad Tecnológica de San Juan del Río**  
 Ingeniería en Desarrollo de Software Multiplataforma · 4.º Cuatrimestre
