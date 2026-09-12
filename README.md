@@ -11,7 +11,7 @@
 </tr>
 </table>
 
-# 🐺 Alfa Buena Maravilla Onda Dinamita Escuadrón Lobo
+# 🐺 Alfa Buena Maravilla Onda Dinamita Team Lobo
 
 ### Desarrollo de Aplicaciones Móviles · Flutter
 
@@ -52,7 +52,7 @@
 
 ---
 
-## 👥 Escuadrón
+## 👥 Team
 
 <div align="center">
 
@@ -60,32 +60,31 @@
 <tr>
 <td align="center" width="20%">
 <a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49254.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49254.png" width="125" alt="Angel Ariel Escobedo Lugo" /></a><br>
-<b>Angel Ariel<br>Escobedo Lugo</b><br>
+<b>Angel Ariel<br>Escobedo<br>Lugo</b><br>
 <sub>Épica 4 · Compras</sub><br>
 <sub>US09 · US10</sub>
 </td>
 <td align="center" width="20%">
 <a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49194.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49194.png" width="125" alt="Julio Cesar Ramírez Vela" /></a><br>
-<b>Julio Cesar<br>Ramírez Vela</b><br>
+<b>Julio Cesar<br>Ramírez<br>Vela</b><br>
 <sub>Épica 5 · Auditorías</sub><br>
 <sub>US11 · US12</sub>
 </td>
 <td align="center" width="20%">
 <a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/47813.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/47813.png" width="125" alt="Sebastián Mendoza Montoya" /></a><br>
-<b>Sebastián Mendoza<br>Montoya</b><br>
+<b>Sebastián<br>Mendoza<br>Montoya</b><br>
 <sub>Épica 1 · Autenticación</sub><br>
 <sub>US01 · US02</sub>
 </td>
 <td align="center" width="20%">
 <a href="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49101.png"><img src="http://administrativos.utsjr.edu.mx/p/imagenes/kredencialez/49101.png" width="125" alt="Leonel Hernández Trejo" /></a><br>
-<b>Leonel Hernández<br>Trejo</b><br>
+<b>Leonel<br>Hernández<br>Trejo</b><br>
 <sub>Épica 2 · Catálogo</sub><br>
 <sub>US03 · US04 · US05</sub>
 </td>
 <td align="center" width="20%">
 <a href="https://iokort.com/mcp/api/file.php?id=4aa093f1-9e2a-4b0e-aae0-0a6371a4e887"><img src="https://iokort.com/mcp/api/file.php?id=4aa093f1-9e2a-4b0e-aae0-0a6371a4e887" width="125" alt="Kurt Cobain Vazquez Sanchez" /></a><br>
-<b>Kurt Cobain<br>Vazquez Sanchez</b><br>
-<sub>Capitán del sprint</sub><br>
+<b><code>Kurt Cobain</code><br><code>Vazquez</code><br><code>Sanchez</code></b><br>
 <sub>Épica 3 · Inventario</sub><br>
 <sub>US06 · US07 · US08</sub>
 </td>
@@ -221,7 +220,7 @@ main
 <img src="https://iokort.com/mcp/api/file.php?id=d6f1b0b4-55b3-4381-9ce7-7996c931d8b0" alt="SOLID" height="72" />
 </td>
 <td valign="middle" width="82%">
-SOLID es un conjunto de cinco principios de diseño orientado a objetos que usaremos para mantener el proyecto entendible, desacoplado y fácil de modificar. La idea no es crear capas por crear capas: cada separación debe tener una razón que cualquiera del equipo pueda explicar.
+SOLID es un conjunto de cinco principios de diseño orientado a objetos que usaremos para mantener el proyecto entendible, desacoplado y fácil de modificar. La idea no es crear capas por crear capas: cada separación debe tener una razón que cualquiera del team pueda explicar.
 </td>
 </tr>
 </table>
@@ -249,14 +248,14 @@ ApiClient
      ↓
 ApiConfig.baseUrl
      ↓
-Backend / Function del equipo
+Backend / Function del team
      ↓
 API externa
 ```
 
 ### Regla de comunicación remota
 
-La aplicación Flutter **no consumirá APIs externas directamente**. Todas las solicitudes deberán pasar por el backend o función intermediaria definida por el equipo.
+La aplicación Flutter **no consumirá APIs externas directamente**. Todas las solicitudes deberán pasar por el backend o función intermediaria definida por el team.
 
 La URL base deberá estar centralizada en un único archivo de configuración. De esta forma, cambiar de backend o proveedor no obligará a modificar cada módulo funcional.
 
