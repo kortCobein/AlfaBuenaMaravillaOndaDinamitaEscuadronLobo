@@ -15,10 +15,6 @@
 
 ### Desarrollo de Aplicaciones Móviles · Flutter
 
-<img src="https://iokort.com/mcp/api/file.php?id=d6f1b0b4-55b3-4381-9ce7-7996c931d8b0" alt="Decoración" width="30" />
-
-<br>
-
 <img src="https://img.shields.io/badge/UTSJR-Universidad%20Tecnológica-00245A?style=for-the-badge" alt="UTSJR" />
 <img src="https://img.shields.io/badge/Estado-En%20desarrollo-2ea44f?style=for-the-badge" alt="Estado" />
 
@@ -146,7 +142,7 @@ feature/us05-detalle-producto-leonel
 
 ## 📦 Épica 3 · Inventario
 
-**Responsable: Kurt Cobain Vazquez Sanchez · Cobain · Capitán del sprint**
+**Responsable: Kurt Cobain Vazquez Sanchez · Cobain**
 
 - [US06 · Agregar nuevo producto al catálogo](docs/US06-agregar-nuevo-producto-al-catalogo.md)
 - [US07 · Editar información de un artículo](docs/US07-editar-informacion-de-un-articulo.md)
@@ -217,9 +213,23 @@ main
 
 ---
 
-## 🧱 Arquitectura acordada
+## 🧩 ¿Qué significa SOLID?
 
-El proyecto aplicará principios **SOLID** con una estructura comprensible y justificable. El objetivo no es añadir capas innecesarias, sino separar responsabilidades para que cada integrante pueda explicar completamente su implementación.
+<div align="center">
+<img src="https://iokort.com/mcp/api/file.php?id=d6f1b0b4-55b3-4381-9ce7-7996c931d8b0" alt="SOLID" width="30" />
+</div>
+
+SOLID es un conjunto de cinco principios de diseño orientado a objetos que usaremos para mantener el proyecto entendible, desacoplado y fácil de modificar. La idea no es crear capas por crear capas: cada separación debe tener una razón que cualquiera del equipo pueda explicar.
+
+| Principio | Qué significa | Cómo lo aplicaremos en Flutter |
+|:--|:--|:--|
+| **S · Single Responsibility** | Una clase o módulo debe tener una responsabilidad principal. | Los widgets muestran UI; los servicios hacen peticiones; los repositorios coordinan datos; los controladores manejan estado. |
+| **O · Open/Closed** | El código debe poder extenderse sin modificar constantemente lo ya estable. | Podremos agregar nuevas fuentes de datos, estrategias o widgets sin reescribir módulos completos. |
+| **L · Liskov Substitution** | Una implementación debe poder sustituir a su abstracción sin romper el comportamiento esperado. | Un repositorio remoto, mock o local deberá cumplir el mismo contrato para que la UI no dependa de cómo se obtienen los datos. |
+| **I · Interface Segregation** | Es mejor tener contratos pequeños y específicos que una interfaz enorme. | Cada servicio expondrá sólo las operaciones necesarias para su dominio, por ejemplo autenticación, catálogo o carrito. |
+| **D · Dependency Inversion** | Las capas de alto nivel dependen de abstracciones, no de implementaciones concretas. | Los controladores dependerán de repositorios o contratos y no directamente de `http`, URLs o una API específica. |
+
+### Arquitectura acordada
 
 ```text
 UI / Widgets
